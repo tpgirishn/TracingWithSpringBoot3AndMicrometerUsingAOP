@@ -1,0 +1,9 @@
+.PHONY: all trace provider
+
+all: trace provider
+
+trace:
+	@cd trace && ./gradlew shadowJar
+
+provider:
+	@cd provider && ./gradlew build -x generateJsonSchema2Pojo

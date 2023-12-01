@@ -1,0 +1,12 @@
+subprojects {
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+        flatDir {
+            dirs '../trace/build/libs'
+        }
+    }
+    sourceCompatibility = '17'
+    targetCompatibility = '17'
+}
